@@ -19,3 +19,41 @@ def suma():
     else:
         print("Es menor que", intento)
     
+
+
+
+# Class estudiante
+class Estudiante:
+    def __init__(self, nombre, nota, definitiva):
+        self.nombre = nombre
+        self.nota = nota
+ 
+    
+    def clasificar(self):
+        definitiva = self.calcular_definitiva()
+        return clasificar(definitiva)
+    
+    def calcular_definitiva(notas):
+        return sum (nota)/ len (nota)
+    
+    def calcular_clasificar(self):
+        if self.nota == 5:
+            return "Excelente"
+        elif self.nota >= 3:
+           return "Aprobado"
+        else:
+           return "reprobado"
+        
+def validar_nota:
+        nota >=0 and <=5:
+
+
+while True:
+    nombre = input("Nombre (o 'salir'): ")
+    if nombre.lower() == 'salir': 
+        break
+    print("\n-Resultado- ")
+    for i in range(3):
+   num = float(input("i+1"))
+   if validar.nota
+    print(f"{i.nombre}: {i.nota}, {i.calcular_clasificar()}")
