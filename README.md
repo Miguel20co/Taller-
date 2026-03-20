@@ -165,3 +165,50 @@ while True:
     print(f"Definitiva: {definitiva:.2f}")
     print(f"Resultado: {estado}")
     print("-" * 20)
+
+
+
+
+
+
+# Medicamento
+
+class Medicamento:
+   def __init__(self,nombre, formula medica, cantidad, precio unitario):
+       self._nombre = nombre
+       self._formula medica = formula
+       self._cantidad = cantidad
+       self._precio unitario = unitario
+    
+    def get_nombre(self):                return self._nombre
+    def get_formula_medica(self):        return self._requiere_formula
+    def get_cantidad(self):              return self._cantidad
+    def precio_unitario(self):           return self._precio
+         
+    def __str__(self):
+        formula = "Si" if self._formula_medica
+        else
+          "No"
+        return (f"{medicamento] {self._nombre}"
+                f"formula: {formula}"
+                f"cantidad: {self._cantidad"}
+                f"precio: {preio_unitario"}
+    
+    def vender(self,cantidad_vendida):
+        if cantidad_vendida <= 0:
+            print("invalidad")
+            return 0
+        if cantiadad_vendidad > self.cantidad:
+            print(f"no hay suficiente"
+                  f"disponible:")
+            
+            
+        self._cantidad -= cantiadad_vendida:
+                return cantiada_vendida * self.precio
+            
+        else:
+            return 0
+    
+    print(f"insuficiente")
+          elf.cantidad -= cantiadad_vendida:
+                return cantiada_vendida * self.precio
