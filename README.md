@@ -24,36 +24,52 @@ def suma():
 
 # Class estudiante
 class Estudiante:
-    def __init__(self, nombre, nota, definitiva):
+    def __init__(self, nombre, notas):
         self.nombre = nombre
-        self.nota = nota
- 
-    
-    def clasificar(self):
-        definitiva = self.calcular_definitiva()
-        return clasificar(definitiva)
-    
-    def calcular_definitiva(notas):
-        return sum (nota)/ len (nota)
-    
-    def calcular_clasificar(self):
-        if self.nota == 5:
-            return "Excelente"
-        elif self.nota >= 3:
-           return "Aprobado"
-        else:
-           return "reprobado"
-        
-def validar_nota:
-        nota >=0 and <=5:
+        self.notas = notas 
 
+    def calcular_definitiva(self):
+     if not self.notas:
+            return 0
+        return sum(self.notas) / len(self.notas)
+
+    def clasificar(self):
+        promedio = self.calcular_definitiva()
+        if promedio == 5:
+            return "Excelente"
+        elif promedio >= 3:
+            return "Aprobado"
+        else:
+            return "Reprobado"
+
+def validar_nota(nota):
+    return 0 <= nota <= 5
 
 while True:
-    nombre = input("Nombre (o 'salir'): ")
+    nombre = input("\nNombre del estudiante (o 'salir'): ")
     if nombre.lower() == 'salir': 
         break
-    print("\n-Resultado- ")
-    for i in range(3):
-   num = float(input("i+1"))
-   if validar.nota
-    print(f"{i.nombre}: {i.nota}, {i.calcular_clasificar()}")
+    
+    notas_temporales = []
+    i = 0
+    while i < 3:
+        try:
+            num = float(input(f"Ingrese nota {i+1} (0-5): "))
+            if validar_nota(num):
+                notas_temporales.append(num)
+                i += 1
+            else:
+                print("Error: La nota debe estar entre 0 y 5.")
+        except ValueError:
+            print("Error: Ingrese un número válido.")
+
+   estudiante = Estudiante(nombre, notas_temporales)
+    
+    definitiva = estudiante.calcular_definitiva()
+    estado = estudiante.clasificar()
+    
+    print("-" * 20)
+    print(f"Estudiante: {estudiante.nombre}")
+    print(f"Definitiva: {definitiva:.2f}")
+    print(f"Resultado: {estado}")
+    print("-" * 20)
