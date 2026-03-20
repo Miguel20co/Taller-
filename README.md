@@ -64,7 +64,6 @@ while True:
             print("Error: Ingrese un número válido.")
 
    estudiante = Estudiante(nombre, notas_temporales)
-    
     definitiva = estudiante.calcular_definitiva()
     estado = estudiante.clasificar()
     
