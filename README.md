@@ -1,4 +1,4 @@
-# PRIMERO
+# Nivel 1:
 
 def edad():
     user_edad = input("Ingresa tu edad: ")
@@ -18,8 +18,29 @@ def suma():
         print("Es mayor que", intento)
     else:
         print("Es menor que", intento)
-    
 
+
+# Nivel 2:
+
+def palindromo(palabra):
+    palabra = palabra.lower()
+    if palabra == palabra[::-1]:
+        return True
+    else:
+        return False
+
+def calcular_potencia(base, exponente):
+    resultado = base ** exponente
+    print("El resultado de la potencia es:", resultado)
+
+def calcular_media(lista):
+    total = sum(lista)
+    cantidad = len(lista)
+    media = total / cantidad
+    print("La media de los elementos es:", media)
+
+
+# Nivel 3:
 
 
 # Class estudiante
