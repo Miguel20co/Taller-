@@ -42,6 +42,31 @@ def calcular_media(lista):
 
 # Nivel 3:
 
+def invertir_cadena(cadena):
+     return cadena[::-1]
+
+
+def mayor_de_tres_numeros(numero1, numero2, numero3):
+    return max(numero1, numero2, numero3)
+
+
+
+def calcular_area(radio, altura):
+    area = (2 * math.pi * radio * altura) + (2 * math.pi * radio**2)
+    return area
+
+
+
+def buscar_palabra(cadena, palabra):
+    if palabra in cadena:
+        return True
+    else:
+        return False
+
+
+# Nivel 4:
+
+
 
 # Class estudiante
 class Estudiante:
