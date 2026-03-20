@@ -20,6 +20,12 @@ def suma():
         print("Es menor que", intento)
 
 
+
+
+
+        
+
+
 # Nivel 2:
 
 def palindromo(palabra):
@@ -64,8 +70,49 @@ def buscar_palabra(cadena, palabra):
         return False
 
 
-# Nivel 4:
 
+
+        
+
+
+# Nivel 4:
+def promedio(*numeros):
+    if not numeros:
+        return 0
+    return sum(numeros) / len(numeros)
+
+
+def multiplicar_lista(lista, numero):
+    nueva_lista = [elemento * numero for elemento in lista]
+    return nueva_lista
+
+
+def mayor_de_varios_numeros(*numeros):
+    if not numeros:
+        return None
+    return max(numeros)
+
+
+def calcular_mediana(*numeros):
+    lista = sorted(numeros)
+    n = len(lista)
+    if n == 0:
+        return None
+    medio = n // 2
+    if n % 2 != 0:
+        return lista[medio]
+    else:
+        return (lista[medio - 1] + lista[medio]) / 2
+
+
+def contar_ocurrencias(cadena, palabra):
+      return cadena.count(palabra)
+
+
+
+
+
+      
 
 
 # Class estudiante
