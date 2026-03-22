@@ -232,7 +232,7 @@ class Persona:
 
 
 
-# Herenci
+# Herencia
 class Vehiculo:
     def __init__(self, marca, modelo, info):
         self._marca = marca
