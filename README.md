@@ -212,3 +212,151 @@ class Medicamento:
     print(f"insuficiente")
           elf.cantidad -= cantiadad_vendida:
                 return cantiada_vendida * self.precio
+
+
+
+
+# Clases basicas
+
+class Persona:
+    def __init__(self, nombre, edad):
+        self._nombre = nombre
+        self._edad = edad
+    
+    def saludar(self):
+        print("hola mi nombre es {self.nombre} y tengo {self.edad} años")
+
+# Herenci
+class Vehiculo:
+    def __init__(self, marca, modelo, info):
+        self._marca = marca
+        self._modelo = modelo
+        
+    def info(self):
+        return print(f"vehiculo: {self.marca} {self.modelo}")
+    
+class Coche(Vehiculo):
+    def __init__(self, puertas, modelo, marca):
+        super().__init__(marca, modelo)
+        self._puertas = puertas
+    
+    def info(self):
+        mensaje = super().imfo()
+        return f"{mensaje}, puertas: {self.puertas}"
+    
+
+
+
+
+
+# Clases y archivos
+class Libro:
+    def __init__(self, titulo, autor):
+        self._titulo = titulo
+        self._autor = autor
+        
+    def __str__(self):
+        return f"{self._titulo}, {self._autor}"
+    
+    
+class Biblioteca:
+    def __init__(self,nombres):
+        self._nombre = nombre
+        self._libros = []
+        
+    def agrear(self,titulo, autor):
+        nuevo_libro = libro(titulo, autor)
+        self.libros.append(nuevo_libro)
+    
+    def listar(self):
+        for libro in self.libros:
+            print(f"titulo:{libro.titulo}, Autor{libro.autor}")
+            
+    def guardar(self):
+        archivo = open("lista_libros")
+        for libro in self.libros:
+            archivo.escribir(f"{libro.titulo},{libro.autor}\n")
+        archivo.cerrado()
+        print("archivo guardado")
+        
+    def cargar (self):
+        archivo = open("lista_libro")
+        for line in archivo:
+            datos = linea.strip().split(",")
+            self.agregar(datos[0], datos[1])
+        archivo.close()
+        print("Archivo cargador.")
+
+
+    # Clase Empaque
+    class Empaque:
+    def __init__(self,material, color, resistencia):
+        self.color = color
+        self.material = material
+        self._resistencia = resitencia
+        
+    def mostrar_info(self):
+        print(f"Empaque de {self.material}, color: {self.capacidad}")
+        
+    def obtener_resistencia(self):
+        return f"aleacion especial: {self._resistencia}"
+
+class caja(Empaque):
+    pass
+
+class bolsa(Empaque):
+    pass
+
+Caja = caja("madera,15kg")
+Bolsa = bolsa("plastico, 50gr")
+
+
+
+
+
+# Clase Vehiculo
+class vehiculo:
+    def __init__(self,marca, color, modelo):
+        self.marca = marca
+        self.color = color
+        self._modelo = modelo
+        
+    def mostrar.info():
+        print(f"vehiculo:{self.marca} , color:{self.color}")
+        
+    def obteer_modelo(self):
+        print(f"el modelo es: {self._modelo}")
+        
+class Moto(Vehiculo):
+    pass
+class Camioneta(vehiculo):
+    pass
+
+moto = Moto("Bera, azul , trxcb")
+camioneta = Camioneta ("Ram, negra, Trx")
+
+
+
+# Clase planta
+class Planta: 
+    def __init__(self, tipo):
+        self.tipo = tipo
+
+class Arbol(Planta):
+    def __init__(self, especie, edad, id_forestal):
+        super().__init__("frondoso")   
+        self.especie = especie        
+        self.edad = edad              
+        self.__id_forestal = id_forestal 
+
+    def crecer(self):                
+        print(f"El {self.especie} ha crecido un poco más.")
+
+    def oxigenar(self):               
+        print("Produciendo oxígeno...")
+
+
+araguaney = Araguaney("Pino", 10, "ABC-789")  
+
+araguaney.crecer()
+
