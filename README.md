@@ -226,6 +226,12 @@ class Persona:
     def saludar(self):
         print("hola mi nombre es {self.nombre} y tengo {self.edad} años")
 
+
+
+
+
+
+
 # Herenci
 class Vehiculo:
     def __init__(self, marca, modelo, info):
@@ -287,8 +293,13 @@ class Biblioteca:
         archivo.close()
         print("Archivo cargador.")
 
-
-    # Clase Empaque
+  
+  
+  
+  
+  
+  
+  # Clase Empaque
     class Empaque:
     def __init__(self,material, color, resistencia):
         self.color = color
