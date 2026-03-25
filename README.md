@@ -124,7 +124,7 @@ class Estudiante:
     def calcular_definitiva(self):
      if not self.notas:
             return 0
-        return sum(self.notas) / len(self.notas)
+     return sum(self.notas) / len(self.notas)
 
     def clasificar(self):
         promedio = self.calcular_definitiva()
