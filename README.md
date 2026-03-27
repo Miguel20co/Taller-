@@ -369,7 +369,7 @@ class Arbol(Planta):
         print("Produciendo oxígeno...")
 
 
-araguaney = Araguaney("Pino", 10, "ABC-789")  
+araguaney = Araguaney("Araguaney", 10, "ABC-789")  
 
 araguaney.crecer()
 
